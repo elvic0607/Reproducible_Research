@@ -103,7 +103,7 @@ okscale <- list(x = list(rot = 45, cex = 1.0, labels = format(pasospordia$date, 
 barchart(date ~ steps, data = pasospordia, main = "steps per day", ylab = "steps", xlab = "date", scales = okscale, horizontal = F)
 ```
 
-![](assignment_files/figure-html/unnamed-chunk-2-1.png) 
+![](Course Project/assignment_files/figure-html/unnamed-chunk-2-1.png) 
 
 ```r
 paste("mean:", mean(pasospordia$steps))
@@ -141,7 +141,7 @@ text(835,200, "max average of steps: (832,206.2)", col = "blue", adj = c(-.1, -.
 segments(0, 206.2, 832, 206.2, col = "blue", lty = "dashed")
 ```
 
-![](assignment_files/figure-html/unnamed-chunk-3-1.png) 
+![](Course Project/assignment_files/figure-html/unnamed-chunk-3-1.png) 
 
 ```r
 seriedetiempo [maximo, ]
@@ -206,7 +206,7 @@ okscale2 <- list(x = list(rot = 45, cex = 1.0, labels = format(pasospordia2$date
 barchart(date ~ steps, data = pasospordia2, main = "steps per day", ylab = "steps", xlab = "date", scales = okscale2, horizontal = F)
 ```
 
-![](assignment_files/figure-html/unnamed-chunk-4-1.png) 
+![](Course Project/assignment_files/figure-html/unnamed-chunk-4-1.png) 
 
 ```r
 paste("mean:", mean(pasospordia2$steps))
@@ -277,4 +277,4 @@ qplot(interval, steps, data=semana_o_finde, geom=c("line"), xlab="5-min interval
       ylab="steps mean", main="") + facet_wrap(~ tipodia, ncol=1)
 ```
 
-![](assignment_files/figure-html/unnamed-chunk-5-1.png) 
+![](Course Project/assignment_files/figure-html/unnamed-chunk-5-1.png) 
